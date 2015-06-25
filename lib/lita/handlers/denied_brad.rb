@@ -9,7 +9,7 @@ module Lita
         request.reply_with_mention("Denied Brad!")
       end
     end
-    
+
     Lita.register_handler(DeniedBrad)
   end
 end
