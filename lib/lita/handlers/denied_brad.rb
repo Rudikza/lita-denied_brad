@@ -5,7 +5,7 @@ module Lita
     end
 
     def no_brad
-      return unless request.user.mention_name == "brad"
+      return unless request.user.mention_name == "rudi"
 
       request.reply_with_mention("Denied Brad!"
     end
