@@ -4,7 +4,7 @@ module Lita
       route(/./, :no_brad)
 
       def no_brad(request)
-        return unless request.user.mention_name == "rudi"
+        return unless request.user.mention_name == "brad"
 
         request.reply_with_mention("Denied Brad!")
       end
