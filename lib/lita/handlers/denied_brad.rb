@@ -3,7 +3,7 @@ module Lita
     class DeniedBrad < Handler
       route(/./, :no_brad)
 
-      def no_brad
+      def no_brad(request)
         return unless request.user.mention_name == "rudi"
 
         request.reply_with_mention("Denied Brad!")
